@@ -108,7 +108,7 @@ const ToDoList = () => {
     <div>
         {isEditing ?(
             <div>
-                <input className="flex-grow p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 w-full mb-2 ml-2" value={currentTodo.message} onChange={handleEditInputChange}/>
+                <input className="flex-grow p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 w-full mb-2 ml-2 mr-2" value={currentTodo.message} onChange={handleEditInputChange}/>
                 <button className="px-4 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 ml-2 mr-2" onClick={handleUpdate}>update</button>
                 <button className="px-4 py-2 bg-gray-500 text-white font-semibold rounded-lg hover:bg-gray-600" onClick={handleCancelEdit}>Cancel</button>
             </div>    

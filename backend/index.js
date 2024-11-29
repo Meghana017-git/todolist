@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express=require('express');
 const cors =require('cors');
 const RunServer = require('./database/connection');
@@ -6,7 +7,7 @@ const ToDoRouter = require('./routes/todoRouter');
 
 
 const app=express();
-const port = 5000;
+const port = process.env.PORT || 5000; 
 
 
 //json:transmitting the data b/w client & server
